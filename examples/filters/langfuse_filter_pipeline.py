@@ -126,7 +126,7 @@ class Pipeline:
         generation.end(
             output=generated_message,
             usage={
-                "totalCost": (len(user_message) + len(generated_message)) / 1000,
+                "totalCost": 0,
                 "unit": "CHARACTERS",
             },
             metadata={"interface": "open-webui"},
